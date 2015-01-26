@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <ul class="results-list">
+    </ul>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/template" data-template-name="football-item">
+      <div class="etsy-container">
+        <div class="etsy-item">
+          <div class="etsy-image">
+            <img src="<% image %>" alt="Thumbnail">
+          </div>
+          <div class="etsy-title"><p class="ellipsis"><% name %></p></div>
+          <div class="etsy-shop"><p><% shop %></p></div>
+          <div class="etsy-price"><p>$<% price %> USD</p></div>
+
+          </div>
+        </div>
+      </div>
+  </script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

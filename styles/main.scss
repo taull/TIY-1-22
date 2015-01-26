@@ -1,0 +1,86 @@
+@import 'bourbon/bourbon';
+$visual-grid:false;
+$gutter: em(50px);
+@import 'neat/neat';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0 auto;
+  background:#dfdfdf;
+  width:960px;
+  padding-top:100px;
+
+}
+
+.etsy-container {
+  @include outer-container(960px);
+  @include span-columns(4);
+  @include omega(3n);
+  padding-top:20px;
+
+}
+
+.etsy-item {
+  padding: 5px;
+  background: #fff;
+  border-radius:1px;
+  box-shadow:0 0 30px -10px #999;
+}
+
+.etsy-image {
+  margin:0;
+  padding:0;
+}
+
+.etsy-image img {
+  width:274px;
+}
+
+.etsy-title {
+  padding-top:5px;
+  padding-left:5px;
+}
+.etsy-title p {
+  font-size:12px;
+  font-family:sans-serif;
+  color:#555;
+  margin:0;
+  padding:0;
+}
+
+.etsy-price {
+  margin-top:-15px;
+  padding-right:5px;
+}
+
+.etsy-shop {
+  padding-left:5px;
+}
+
+.etsy-price p {
+  color:green;
+  text-align:right;
+  font-family:sans-serif;
+  font-size:12px;
+  margin:0;
+  padding-top:5px;
+}
+
+.etsy-shop p {
+  color:#999;
+  text-align:left;
+  font-family:sans-serif;
+  font-size:10px;
+  margin:0;
+  padding-top:5px;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
